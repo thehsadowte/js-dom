@@ -29,6 +29,12 @@ const pictures = [
     url: "https://picsum.photos/id/1000/700/460",
     alt: "laptop",
   },
+  {
+    width: 700,
+    height: 460,
+    url: "https://picsum.photos/id/1011/700/460",
+    alt: "laptop",
+  },
 ];
 
 // функція для створення карточки makeGalleryCard(cardInfo);
