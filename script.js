@@ -76,56 +76,69 @@
 
 // task
 
-const pictures = [
-  {
-    width: 700,
-    height: 460,
-    url: "https://picsum.photos/id/0/700/460",
-    alt: "laptop",
-  },
-  {
-    width: 700,
-    height: 460,
-    url: "https://picsum.photos/id/1/700/460",
-    alt: "laptop",
-  },
-  {
-    width: 700,
-    height: 460,
-    url: "https://picsum.photos/id/10/700/460",
-    alt: "laptop",
-  },
-  {
-    width: 700,
-    height: 460,
-    url: "https://picsum.photos/id/100/700/460",
-    alt: "laptop",
-  },
-  {
-    width: 700,
-    height: 460,
-    url: "https://picsum.photos/id/1000/700/460",
-    alt: "laptop",
-  },
-];
+// const pictures = [
+//   {
+//     width: 700,
+//     height: 460,
+//     url: "https://picsum.photos/id/0/700/460",
+//     alt: "laptop",
+//   },
+//   {
+//     width: 700,
+//     height: 460,
+//     url: "https://picsum.photos/id/1/700/460",
+//     alt: "laptop",
+//   },
+//   {
+//     width: 700,
+//     height: 460,
+//     url: "https://picsum.photos/id/10/700/460",
+//     alt: "laptop",
+//   },
+//   {
+//     width: 700,
+//     height: 460,
+//     url: "https://picsum.photos/id/100/700/460",
+//     alt: "laptop",
+//   },
+//   {
+//     width: 700,
+//     height: 460,
+//     url: "https://picsum.photos/id/1000/700/460",
+//     alt: "laptop",
+//   },
+// ];
 
-// функція для створення карточки makeGalleryCard(cardInfo);
+// // функція для створення карточки makeGalleryCard(cardInfo);
 
-const galleryListEl = document.querySelector(".js-gallery");
+// const galleryListEl = document.querySelector(".js-gallery");
 
-const makeGalleryCard = ({ width, height, url, alt } = {}) => {
-  const galleryItemEl = document.createElement("li");
-  galleryItemEl.classList.add("gallery-item");
+// const makeGalleryCard = ({ width, height, url, alt } = {}) => {
+//   const galleryItemEl = document.createElement("li");
+//   galleryItemEl.classList.add("gallery-item");
 
-  const galleryImgEl = document.createElement("img");
-  galleryImgEl.src = url;
-  galleryImgEl.alt = alt;
-  galleryImgEl.width = width;
-  galleryImgEl.height = height;
+//   const galleryImgEl = document.createElement("img");
+//   galleryImgEl.src = url;
+//   galleryImgEl.alt = alt;
+//   galleryImgEl.width = width;
+//   galleryImgEl.height = height;
 
-  return galleryItemEl;
-};
+//   return galleryItemEl;
+// };
 
-const galleryItemsEl = pictures.map((el) => makeGalleryCard(el));
+// const galleryItemsEl = pictures.map((el) => makeGalleryCard(el));
 
-galleryListEl.append(...galleryItemsEl);
+// galleryListEl.append(...galleryItemsEl);
+
+// textContent - властивість, яка відповідає за текстовий контент елемента
+
+// innerHTML - властивість, яка відповідає за текстовий контент елемента,
+//  але вона також дозволяє вставляти HTML-розмітку
+
+// const makeGalleryCard = ({ width, height, url, alt } = {}) => {
+//   return `
+//     <li class="gallery-item">
+//         <img src="${url}" alt="${alt}" width="${width}" height="${height}">
+//     </li>
+//     `;
+// };
