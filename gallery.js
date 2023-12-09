@@ -41,7 +41,7 @@ const pictures = [
 
 const galleryListEl = document.querySelector(".js-gallery");
 
-const makeGalleryCard = ({ width, height, url, alt } = {}) => {
+const makeGalleryCard = ({ width, height, url, alt }) => {
   const galleryItemEl = document.createElement("li");
   galleryItemEl.classList.add("gallery-item");
 

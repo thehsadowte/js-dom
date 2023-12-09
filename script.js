@@ -88,3 +88,5 @@
 //     </li>
 //     `;
 // };
+
+const galleryItemsEl = pictures.map((el) => makeGalleryCard(el)).join("");
