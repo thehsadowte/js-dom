@@ -34,3 +34,5 @@
 //  checkbox  change
 
 // event.target.checked
+
+// https://github.com/Olexiy-repin/bootcamp-it-generation/blob/module-06-lesson-02/js/forms-events.js
