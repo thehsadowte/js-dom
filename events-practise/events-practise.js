@@ -49,7 +49,7 @@ btn.addEventListener("click", onClickCount);
 
 // & 1. Створити форму з інпутом для введення імені та кнопкою для підтвердження.
 // & 2. Після натискання на кнопку, вивести на екран текст з введеним іменем.
-// & 3. При натисканні на кнопку очистити інпут.
+// & 3. При натисканні на кнопку очистити інпут. inner
 // & 4. При фокусі на інпут, змінювати колір бордера на червоний, при втраті фокуса - на синій.
 // & 5. При натисканні на текст перекреслювати його . (слухач)
 
@@ -94,3 +94,20 @@ const userItem = users.map((user) => {
   return `<li class="user-item"><h1>name: ${user.name}</h1><p>age: ${user.age}</p></li>`;
 });
 userList.insertAdjacentHTML("beforeend", userItem.join(""));
+
+const addUserBtn = document.createElement("button");
+addUserBtn.textContent = "Add user";
+userList.appendChild(addUserBtn);
+
+addUserBtn.addEventListener("click", () => {
+  const newUser = {
+    name: "Roma",
+    age: 25,
+    eyes: "blue",
+    proffession: "computer science",
+    id: 6,
+  };
+  users.push(newUser);
+  const newUserItem = `<li class="user-item"><h1>name: ${newUser.name}</h1><p>age: ${newUser.age}</p></li>`;
+  userList.insertAdjacentHTML("beforeend", newUserItem);
+});
