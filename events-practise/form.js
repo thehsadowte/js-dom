@@ -1,4 +1,4 @@
-// task 4 Todo list (change, submit preventDefault, form.elements)
+// task 4 Todo list (change, submit preventDefault, form)
 // Ісунує форма з інпутом, куди вводиться текст. І є чекбокс.
 // Поки чекбокс не відмічений, кнопка "Add" не активна.
 // Натисканням ентер в інпуті або кнопкою в список додається нотатка
